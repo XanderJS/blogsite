@@ -1,0 +1,155 @@
+body {
+    min-height            : calc(100vh);
+    display               : grid;
+    grid-template-rows    : 133px 1fr 50px;
+    grid-template-columns : 175px 1fr;
+    background-color      : #dcf;
+    margin                : 0;
+}
+
+header {
+    grid-column      : 1/3;
+    background-image : url("snowforest.jpg");
+}
+
+header h1, h2 {
+    font-family : "Noto Sans KR", sans-serif;
+    color       : white;
+    text-align  : center;
+    text-shadow : 0px 0px 5px black;
+    line-height : 25px;
+}
+
+header h1 {
+    font-size : 50px;
+}
+
+div.dropdown {
+    display     : none;
+    font-family : "Noto Sans KR", sans-serif;
+}
+
+nav {
+    grid-row         : 2/4;
+    background-color : #eee;
+}
+
+nav ul {
+    list-style-type : none;
+    width           : 175px;
+    font-size       : 20px;
+    font-family     : "Noto Sans KR", sans-serif;
+    margin          : 0;
+    padding         : 0;
+}
+
+nav li .active {
+    background-color : #aaa;
+}
+
+nav li a {
+    text-decoration : none;
+    display         : block;
+    padding         : 10px 16px;
+    color           : black;
+}
+
+nav li a:hover {
+    background-color : #aaa;
+    color            : white;
+}
+
+article {
+    grid-row    : 2;
+    grid-column : 2;
+    font-family : "Noto Sans KR", sans-serif;
+    margin-left : 18px;
+}
+
+footer {
+    grid-row         : 3;
+    grid-column      : 2/3;
+    background-color : #bbb;
+    color            : black;
+    padding-left     : 30px;
+    padding-top      : 12px;
+    font-family      : "Noto Sans KR", sans-serif;
+    word-spacing     : 30px;
+}
+
+footer a {
+    text-decoration : none;
+    color           : black;
+    padding         : 5px;
+    border-radius   : 8px;
+}
+
+footer a:hover {
+    background-color : white;
+    box-shadow       : 0px 2px 4px 0px #111;
+}
+
+@media screen and (max-width: 560px) {
+    div.dropdown {
+        display : block;
+    }
+
+    .dropbtn {
+        display          : block;
+        position         : fixed;
+        top              : 20px;
+        left             : 20px;
+        border           : none;
+        background-color : #999;
+        color            : white;
+        font-size        : 20px;
+        text-align       : center;
+        text-decoration  : none;
+        padding          : 2px 6px;
+    }
+
+    .dropbtn:hover {
+        background-color : #bbb;
+    }
+
+    .dropdown {
+        position : fixed;
+        display  : inline-block;
+        opacity  : 93%;
+    }
+
+    .dropdown-content {
+        display          : none;
+        position         : absolute;
+        background-color : #ddd;
+        top              : 47px;
+        left             : 20px;
+        width            : 150px;
+        box-shadow       : 0px 4px 8px 0px #111;
+        z-index          : 1;
+    }
+
+    .dropdown-content a {
+        color           : black;
+        padding         : 12px 16px;
+        text-decoration : none;
+        display         : block;
+    }
+
+    .dropdown-content a:hover {
+        background-color : #aaa;
+        color            : white;
+    }
+
+    .show {
+        display : block;
+    }
+
+    nav {
+        display : none;
+    }
+
+    article, footer {
+        grid-column : 1/3;
+    }
+}

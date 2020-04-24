@@ -1,0 +1,46 @@
+.calculator {
+    background    : #bbf;
+    width         : 260px;
+    border        : solid 2px;
+    border-color  : black;
+    border-radius : 15px;
+    margin        : 30px 15px;
+    padding       : 5px;
+    font-size     : 20px;
+}
+
+.calculator_display {
+    background    : white;
+    padding       : 5px;
+    border-radius : 10px;
+    margin        : 8px;
+}
+
+button {
+    background      : #888;
+    border          : solid 1px;
+    border-color    : black;
+    border-radius   : 3px;
+    margin          : 8px;
+    padding         : 10px 17px;
+    font-size       : 16px;
+    color           : white;
+    text-align      : center;
+    text-decoration : none;
+}
+
+.clear {
+    padding : 10px 76px;
+}
+
+.key-equal {
+    padding : 10px 50px;
+}
+
+.decimal, .subtract {
+    padding : 10px 19px;
+}
+
+.divide {
+    padding : 10px 19.5px;
+}

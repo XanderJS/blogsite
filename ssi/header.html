@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><!--# echo var="title" default="Xander's Blog" --></title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="ssi/site.css">
+        <!--#if expr="$link" -->
+            <link rel="stylesheet" type="text/css" href="<!--# echo var="link" -->">
+        <!--#endif -->
+    </head>
+    <body>
+        <header>
+            <h1>
+                <!--# echo var="header" -->
+            </h1>
+            <h2>
+                <!--# echo var="subheader" -->
+            </h2>
+        </header>

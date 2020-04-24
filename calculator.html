@@ -1,0 +1,37 @@
+<!--#
+    set var="title"      value="Calculator"          --><!--#
+    set var="header"     value="Calculator"          --><!--#
+    set var="subheader"  value="Do some math."       --><!--#
+    set var="calculator" value="active"              --><!--#
+    set var="link"       value="calculator/calc.css" --><!--#
+
+    include virtual="ssi/header.html" --><!--#
+    include virtual="ssi/nav.html"    -->
+
+<article>
+    <div class="calculator">
+        <div class="calculator_display">0</div>
+        <div class="calculator_keys">
+            <button class="clear" data-action="clear">AC</button>
+            <button class="add" data-action="add">+</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="subtract" data-action="subtract">-</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="multiply" data-action="multiply">&times;</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="divide" data-action="divide">/</button>
+            <button>0</button>
+            <button class="decimal" data-action="decimal">.</button>
+            <button class="key-equal" data-action="calculate">=</button>
+        </div>
+    </div>
+</article>
+
+<!--#set var="js" value="calculator/calculator.js" -->
+<!--#include virtual="ssi/footer.html" -->
