@@ -1,0 +1,53 @@
+<!--#
+    set var="title"     value="Tic Tac Toe"             --><!--#
+    set var="header"    value="Tic Tac Toe"             --><!--#
+    set var="subheader" value="Have fun!"               --><!--#
+    set var="tictactoe" value="active"                  --><!--#
+    set var="link"      value="tictactoe/tictactoe.css" --><!--#
+
+    include virtual="ssi/header.html" --><!--#
+    include virtual="ssi/nav.html"    -->
+
+<article>
+    <div id="ttt">
+        <p class="next">
+            Next move:
+        </p>
+
+        <p class="player">
+            X
+        </p>
+
+        <div class="main">
+            <table class="game">
+                <tbody>
+                    <tr>
+                        <td class="cell_0"></td>
+                        <td class="cell_1"></td>
+                        <td class="cell_2"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell_3"></td>
+                        <td class="cell_4"></td>
+                        <td class="cell_5"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell_6"></td>
+                        <td class="cell_7"></td>
+                        <td class="cell_8"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="endgame">
+        </p>
+
+        <p class="restart">
+            <button class="reset">Restart</button>
+        </p>
+    </div>
+</article>
+
+<!--#set var="js" value="tictactoe/tictactoe.js" -->
+<!--#include virtual="ssi/footer.html" -->
