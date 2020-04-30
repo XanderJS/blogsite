@@ -64,6 +64,67 @@ article {
     grid-column : 2;
     font-family : "Noto Sans KR", sans-serif;
     margin-left : 18px;
+    margin-top  : 18px;
+}
+
+article p {
+    margin-top   : 15px;
+    margin-left  : 30px;
+    margin-right : 80px;
+    text-indent  : 50px;
+}
+
+.schedule {
+    border-collapse  : collapse;
+    background-color : #eee;
+}
+
+.schedule caption {
+    font-size        : 30px;
+    background-color : #88f;
+    border           : solid 2px black;
+    border-bottom    : none;
+    border-radius    : 10px 10px 0px 0px;
+    color            : white;
+    padding          : 5px;
+}
+
+.schedule th, td {
+    text-align      : center;
+    border          : solid 2px;
+    border-collapse : collapse;
+    padding         : 5px;
+}
+
+.schedule td:nth-child(even) {
+    background-color : #ccc;
+}
+
+.calender {
+    border-collapse  : collapse;
+    background-color : #eee;
+}
+
+.calender caption {
+    font-size        : 30px;
+    background-color : #88f;
+    border           : solid 2px black;
+    border-bottom    : none;
+    border-radius    : 10px 10px 0px 0px;
+    color            : white;
+    padding          : 5px;
+}
+
+.calender th, td {
+    text-align      : center;
+    border          : solid 2px;
+    border-collapse : collapse;
+    padding         : 5px;
+    width           : 100px;
+}
+
+.calender td:nth-child(even) {
+    background-color : #ccc;
 }
 
 footer {
