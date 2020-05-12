@@ -1,0 +1,104 @@
+<!--#
+    set var="title"     value="Chess"                         --><!--#
+    set var="header"    value="Chess"                         --><!--#
+    set var="subheader" value="It doesn't fully work yet." --><!--#
+    set var="chess"     value="active"                        --><!--#
+    set var="link"      value="chess/chess.css"               --><!--#
+
+    include virtual="ssi/header.html" --><!--#
+    include virtual="ssi/nav.html"    -->
+
+<article>
+    <div id="chess" class="chess">
+        <table class="board">
+            <tbody>
+                <tr class="h">
+                    <td class="1"><div class="piece black r">R</div></td>
+                    <td class="2"><div class="piece black kn">Kn</div></td>
+                    <td class="3"><div class="piece black b">B</div></td>
+                    <td class="4"><div class="piece black q">Q</div></td>
+                    <td class="5"><div class="piece black k">K</div></td>
+                    <td class="6"><div class="piece black b">B</div></td>
+                    <td class="7"><div class="piece black kn">Kn</div></td>
+                    <td class="8"><div class="piece black r">R</div></td>
+                </tr>
+                <tr class="g">
+                    <td class="1"><div class="piece black p">P</div></td>
+                    <td class="2"><div class="piece black p">P</div></td>
+                    <td class="3"><div class="piece black p">P</div></td>
+                    <td class="4"><div class="piece black p">P</div></td>
+                    <td class="5"><div class="piece black p">P</div></td>
+                    <td class="6"><div class="piece black p">P</div></td>
+                    <td class="7"><div class="piece black p">P</div></td>
+                    <td class="8"><div class="piece black p">P</div></td>
+                </tr>
+                <tr class="f">
+                    <td class="1"></td>
+                    <td class="2"></td>
+                    <td class="3"></td>
+                    <td class="4"></td>
+                    <td class="5"></td>
+                    <td class="6"></td>
+                    <td class="7"></td>
+                    <td class="8"></td>
+                </tr>
+                <tr class="e">
+                    <td class="1"></td>
+                    <td class="2"></td>
+                    <td class="3"></td>
+                    <td class="4"></td>
+                    <td class="5"></td>
+                    <td class="6"></td>
+                    <td class="7"></td>
+                    <td class="8"></td>
+                </tr>
+                <tr class="d">
+                    <td class="1"></td>
+                    <td class="2"></td>
+                    <td class="3"></td>
+                    <td class="4"></td>
+                    <td class="5"></td>
+                    <td class="6"></td>
+                    <td class="7"></td>
+                    <td class="8"></td>
+                </tr>
+                <tr class="c">
+                    <td class="1"></td>
+                    <td class="2"></td>
+                    <td class="3"></td>
+                    <td class="4"></td>
+                    <td class="5"></td>
+                    <td class="6"></td>
+                    <td class="7"></td>
+                    <td class="8"></td>
+                </tr>
+                <tr class="b">
+                    <td class="1"><div class="piece white p">P</div></td>
+                    <td class="2"><div class="piece white p">P</div></td>
+                    <td class="3"><div class="piece white p">P</div></td>
+                    <td class="4"><div class="piece white p">P</div></td>
+                    <td class="5"><div class="piece white p">P</div></td>
+                    <td class="6"><div class="piece white p">P</div></td>
+                    <td class="7"><div class="piece white p">P</div></td>
+                    <td class="8"><div class="piece white p">P</div></td>
+                </tr>
+                <tr class="a">
+                    <td class="1"><div class="piece white r">R</div></td>
+                    <td class="2"><div class="piece white kn">Kn</div></td>
+                    <td class="3"><div class="piece white b">B</div></td>
+                    <td class="4"><div class="piece white q">Q</div></td>
+                    <td class="5"><div class="piece white k">K</div></td>
+                    <td class="6"><div class="piece white b">B</div></td>
+                    <td class="7"><div class="piece white kn">Kn</div></td>
+                    <td class="8"><div class="piece white r">R</div></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="restart">
+            <button class="reset">Reset</button>
+        </p>
+    </div>
+</article>
+
+<!--#set var="js" value="chess/chess.js" -->
+<!--#include virtual="ssi/footer.html" -->

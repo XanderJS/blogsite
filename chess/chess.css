@@ -1,0 +1,63 @@
+.chess {
+    text-align : center;
+    color      : black;
+}
+
+.chess .board {
+    border-collapse : collapse;
+    margin          : auto;
+}
+
+.chess .board td {
+    border     : 2px solid black;
+    width      : 60px;
+    height     : 60px;
+    font-size  : 25px;
+    text-align : center;
+    cursor     : pointer;
+}
+
+.chess .board tr:nth-child(odd)  td:nth-child(even),
+.chess .board tr:nth-child(even) td:nth-child(odd) {
+    background-color : white;
+}
+
+.chess .board tr:nth-child(even) td:nth-child(even),
+.chess .board tr:nth-child(odd)  td:nth-child(odd) {
+    background-color : #999;
+}
+
+.chess .board tr:nth-child(odd)  td:nth-child(even):hover,
+.chess .board tr:nth-child(even) td:nth-child(odd):hover,
+.chess .board tr:nth-child(even) td:nth-child(even):hover,
+.chess .board tr:nth-child(odd)  td:nth-child(odd):hover {
+    background-color : #ccc;
+}
+
+.chess td div.white {
+    color       : #ddd;
+    text-shadow : 0px 1px 3px black;
+}
+
+.chess td div.black {
+    text-shadow : 0px 1px 3px white;
+}
+
+.chess .board tr:nth-child(odd)  td:nth-child(even).selected,
+.chess .board tr:nth-child(even) td:nth-child(odd).selected,
+.chess .board tr:nth-child(even) td:nth-child(even).selected,
+.chess .board tr:nth-child(odd)  td:nth-child(odd).selected {
+    background-color : #6f6;
+}
+
+.chess .restart .reset {
+    font-size     : 23px;
+    padding       : 5px 10px;
+    border        : 1px solid;
+    border-radius : 5px;
+    cursor        : pointer;
+}
+
+.chess .restart .reset:hover {
+    background-color : #ccc;
+}
